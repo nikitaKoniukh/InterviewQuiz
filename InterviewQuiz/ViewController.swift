@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Outlets
+    @IBOutlet weak var qestionTitleLabel: UILabel!
+    @IBOutlet weak var questionImage: UIImageView!
+
+    //Variables
+    var questions = DataService.instance.getQuestion()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        for q in questions {
+            questionImage.image = UIImage(named: q.questionImage) 
+        }
     }
-
-
 }
+
+
+
+
+
+
+
 

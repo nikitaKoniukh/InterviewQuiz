@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA14C6D222F0633100016D6C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA14C6D122F0633100016D6C /* RoundedButton.swift */; };
+		CA14C6D422F0662000016D6C /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA14C6D322F0662000016D6C /* QuestionModel.swift */; };
+		CA14C6D822F07A6100016D6C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA14C6D722F07A6100016D6C /* DataService.swift */; };
 		CABC368222EF8A29007A02FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC368122EF8A29007A02FA /* AppDelegate.swift */; };
 		CABC368422EF8A29007A02FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC368322EF8A29007A02FA /* ViewController.swift */; };
 		CABC368722EF8A29007A02FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABC368522EF8A29007A02FA /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA14C6D122F0633100016D6C /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CA14C6D322F0662000016D6C /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		CA14C6D722F07A6100016D6C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CABC367E22EF8A29007A02FA /* InterviewQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABC368122EF8A29007A02FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABC368322EF8A29007A02FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				CABC368122EF8A29007A02FA /* AppDelegate.swift */,
-				CABC368322EF8A29007A02FA /* ViewController.swift */,
 				CABC368522EF8A29007A02FA /* Main.storyboard */,
 				CABC368822EF8A29007A02FA /* Assets.xcassets */,
 				CABC368A22EF8A29007A02FA /* LaunchScreen.storyboard */,
 				CABC368D22EF8A29007A02FA /* Info.plist */,
+				CA14C6D122F0633100016D6C /* RoundedButton.swift */,
+				CABC368322EF8A29007A02FA /* ViewController.swift */,
+				CA14C6D322F0662000016D6C /* QuestionModel.swift */,
+				CA14C6D722F07A6100016D6C /* DataService.swift */,
 			);
 			path = InterviewQuiz;
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABC368422EF8A29007A02FA /* ViewController.swift in Sources */,
+				CA14C6D222F0633100016D6C /* RoundedButton.swift in Sources */,
 				CABC368222EF8A29007A02FA /* AppDelegate.swift in Sources */,
+				CA14C6D422F0662000016D6C /* QuestionModel.swift in Sources */,
+				CA14C6D822F07A6100016D6C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5KK6475ZS;
 				INFOPLIST_FILE = InterviewQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5KK6475ZS;
 				INFOPLIST_FILE = InterviewQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
