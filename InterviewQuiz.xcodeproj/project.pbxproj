@@ -60,17 +60,41 @@
 		CABC368022EF8A29007A02FA /* InterviewQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CABE019222F840BD00353890 /* Suporting files */,
+				CABE019122F840A700353890 /* View */,
+				CABE019022F83EC000353890 /* Model */,
 				CABC368122EF8A29007A02FA /* AppDelegate.swift */,
 				CABC368522EF8A29007A02FA /* Main.storyboard */,
-				CABC368822EF8A29007A02FA /* Assets.xcassets */,
-				CABC368A22EF8A29007A02FA /* LaunchScreen.storyboard */,
-				CABC368D22EF8A29007A02FA /* Info.plist */,
-				CA14C6D122F0633100016D6C /* RoundedButton.swift */,
 				CABC368322EF8A29007A02FA /* ViewController.swift */,
+			);
+			path = InterviewQuiz;
+			sourceTree = "<group>";
+		};
+		CABE019022F83EC000353890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				CA14C6D322F0662000016D6C /* QuestionModel.swift */,
 				CA14C6D722F07A6100016D6C /* DataService.swift */,
 			);
-			path = InterviewQuiz;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CABE019122F840A700353890 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA14C6D122F0633100016D6C /* RoundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CABE019222F840BD00353890 /* Suporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CABC368822EF8A29007A02FA /* Assets.xcassets */,
+				CABC368A22EF8A29007A02FA /* LaunchScreen.storyboard */,
+				CABC368D22EF8A29007A02FA /* Info.plist */,
+			);
+			name = "Suporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
