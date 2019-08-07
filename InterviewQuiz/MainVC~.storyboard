@@ -1,18 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaq-Dl-lVC">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="fgG-gX-zKK">
+            <objects>
+                <viewController id="zaq-Dl-lVC" customClass="MainViewController" customModule="InterviewQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJ8-Ls-oTy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hug-pE-32r">
+                                <rect key="frame" x="55" y="60" width="265.33333333333331" height="34.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-7K-gM3">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quizz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7M-wL-XqP">
+                                        <rect key="frame" x="151.33333333333334" y="0.0" width="70" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxf-hh-2a3">
+                                        <rect key="frame" x="221.33333333333331" y="0.0" width="44" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UW0-zB-8KZ">
+                                <rect key="frame" x="16" y="110.33333333333334" width="343" height="119.33333333333334"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-2x-epj">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="119.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can choose one of the programming languages and to try pass the Quizz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-VS-fjm">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="46.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spW-qS-nNq">
+                                                <rect key="frame" x="0.0" y="54.666666666666671" width="343" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="wAy-OH-Vb4"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="ZxJ-Mr-VK6"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But remember, you have just only one try! For more info read the rules." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-IX-TwA">
+                                                <rect key="frame" x="0.0" y="63.666666666666671" width="343" height="46.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-9F-fQ6">
+                                                <rect key="frame" x="0.0" y="118.33333333333333" width="343" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="jnF-AY-mDu"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GJx-2x-epj" secondAttribute="bottom" id="HEx-ET-MAT"/>
+                                    <constraint firstItem="GJx-2x-epj" firstAttribute="top" secondItem="UW0-zB-8KZ" secondAttribute="top" id="HrN-FT-4ao"/>
+                                    <constraint firstAttribute="trailing" secondItem="GJx-2x-epj" secondAttribute="trailing" id="YWT-iX-1SR"/>
+                                    <constraint firstItem="GJx-2x-epj" firstAttribute="leading" secondItem="UW0-zB-8KZ" secondAttribute="leading" id="bbe-fn-kNt"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-1q-9ll">
+                                <rect key="frame" x="8" y="245.66666666666669" width="359" height="524.33333333333326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="quizzListCell" textLabel="I55-v6-q9f" style="IBUITableViewCellStyleDefault" id="YKd-s5-Z0y">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YKd-s5-Z0y" id="oIS-sf-dUZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I55-v6-q9f">
+                                                    <rect key="frame" x="15" y="0.0" width="329" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UW0-zB-8KZ" firstAttribute="top" secondItem="hug-pE-32r" secondAttribute="bottom" constant="16" id="0HE-g1-hvL"/>
+                            <constraint firstItem="VeE-1q-9ll" firstAttribute="leading" secondItem="6P7-24-vVK" secondAttribute="leading" constant="8" id="2am-qP-kv6"/>
+                            <constraint firstItem="hug-pE-32r" firstAttribute="top" secondItem="6P7-24-vVK" secondAttribute="top" constant="16" id="3Az-MP-r5O"/>
+                            <constraint firstItem="UW0-zB-8KZ" firstAttribute="leading" secondItem="6P7-24-vVK" secondAttribute="leading" constant="16" id="9Os-f4-tRQ"/>
+                            <constraint firstItem="6P7-24-vVK" firstAttribute="trailing" secondItem="UW0-zB-8KZ" secondAttribute="trailing" constant="16" id="Dnp-Ts-7io"/>
+                            <constraint firstItem="hug-pE-32r" firstAttribute="centerX" secondItem="gJ8-Ls-oTy" secondAttribute="centerX" id="NJ0-cY-DOG"/>
+                            <constraint firstItem="6P7-24-vVK" firstAttribute="bottom" secondItem="VeE-1q-9ll" secondAttribute="bottom" constant="8" id="Swu-8P-RKe"/>
+                            <constraint firstItem="UW0-zB-8KZ" firstAttribute="centerX" secondItem="gJ8-Ls-oTy" secondAttribute="centerX" id="fcE-J3-ntI"/>
+                            <constraint firstItem="VeE-1q-9ll" firstAttribute="top" secondItem="UW0-zB-8KZ" secondAttribute="bottom" constant="16" id="tlE-yc-Dq3"/>
+                            <constraint firstItem="6P7-24-vVK" firstAttribute="trailing" secondItem="VeE-1q-9ll" secondAttribute="trailing" constant="8" id="yXr-Bo-y7j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6P7-24-vVK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UBf-8x-DXH"/>
+                    <connections>
+                        <outlet property="tableView" destination="VeE-1q-9ll" id="awd-2S-8DC"/>
+                        <segue destination="kja-62-vLA" kind="presentation" identifier="toQuizz" id="Fbi-E4-1l5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAD-2G-PNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ftb-tl-WyV">
+            <objects>
+                <viewController id="kja-62-vLA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6Z-Ph-2Fg" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-7c-arz">
+                                <rect key="frame" x="8" y="730" width="359" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Ts-cw-UYR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="GOT IT!">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="tKT-mP-ySX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jFv-A1-XSh" firstAttribute="bottom" secondItem="fyp-7c-arz" secondAttribute="bottom" constant="8" id="bEw-9u-fVq"/>
+                            <constraint firstItem="fyp-7c-arz" firstAttribute="leading" secondItem="jFv-A1-XSh" secondAttribute="leading" constant="8" id="dRZ-1g-rRX"/>
+                            <constraint firstItem="jFv-A1-XSh" firstAttribute="trailing" secondItem="fyp-7c-arz" secondAttribute="trailing" constant="8" id="lAb-dr-OyK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jFv-A1-XSh"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlE-Bh-2tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="129"/>
+        </scene>
         <!--Quizz View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-BYZ-38-t0r" id="BYZ-38-t0r" customClass="QuizzViewController" customModule="InterviewQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuizzViewController" customModule="InterviewQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ch-gd-UAg">

@@ -1,234 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uvq-TT-GK9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--UIViewController-kja-62-vLA-->
+        <scene sceneID="Bfd-Fo-NlL">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InterviewQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="UzD-fG-Exa">
-                                <rect key="frame" x="32" y="160.66666666666663" width="311" height="201"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What output will be produced by the code below?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWV-FC-gOZ">
-                                <rect key="frame" x="32" y="104" width="311" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3sL-XV-Ee7">
-                                <rect key="frame" x="16" y="478" width="343" height="232"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fA-ch-8Hr" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="9yW-Ml-Nah"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="A">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" red="0.99607843139999996" green="0.69803921570000005" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.99607843139999996" green="0.69803921570000005" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="optionButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jl-Re-SWK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTd-fO-vW3" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="48" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="GWN-VM-xP5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="B">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="optionButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4q-3F-Jvd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3T-9a-I23" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="96" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ERb-cJ-ZWo"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="optionButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwQ-M0-L8t"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-Ve-xWG" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="144" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="hrk-GJ-ede"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="D">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="optionButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uE-Mk-pUQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaU-JN-Xnn" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="192" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="DnS-Cc-mgE"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="E">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="optionButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAq-Ow-JS7"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF4-H5-YKd" customClass="RoundedButton" customModule="InterviewQuiz" customModuleProvider="target">
-                                <rect key="frame" x="16" y="726" width="343" height="36"/>
-                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Submit answer">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="submitAnswerBtnWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6L-KH-7jY"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="V6Y-cb-iyD">
-                                <rect key="frame" x="16" y="96" width="343" height="2"/>
-                                <color key="tintColor" red="0.83677796240000002" green="0.1814871522" blue="0.84648635790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </progressView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3sL-XV-Ee7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UzD-fG-Exa" secondAttribute="bottom" constant="20" id="0gw-kR-Shs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rF4-H5-YKd" secondAttribute="trailing" constant="16" id="6Rd-2p-CAw"/>
-                            <constraint firstItem="UzD-fG-Exa" firstAttribute="top" secondItem="KWV-FC-gOZ" secondAttribute="bottom" constant="16" id="F2I-tS-6cu"/>
-                            <constraint firstItem="3sL-XV-Ee7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M05-hI-DWJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UzD-fG-Exa" secondAttribute="trailing" constant="32" id="R5m-pn-jUg"/>
-                            <constraint firstItem="V6Y-cb-iyD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="U1l-3F-JYf"/>
-                            <constraint firstItem="rF4-H5-YKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="b6X-2y-B4k"/>
-                            <constraint firstItem="V6Y-cb-iyD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="br1-4a-R4M"/>
-                            <constraint firstItem="UzD-fG-Exa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="elx-aa-ha3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rF4-H5-YKd" secondAttribute="bottom" constant="16" id="evd-55-QVF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sL-XV-Ee7" secondAttribute="trailing" constant="16" id="gmr-VY-Jqn"/>
-                            <constraint firstItem="V6Y-cb-iyD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kjb-bV-j9h"/>
-                            <constraint firstItem="KWV-FC-gOZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="r87-Kj-TMi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWV-FC-gOZ" secondAttribute="trailing" constant="32" id="rtz-39-4fG"/>
-                            <constraint firstItem="KWV-FC-gOZ" firstAttribute="top" secondItem="V6Y-cb-iyD" secondAttribute="bottom" constant="6" id="sEw-SI-keM"/>
-                            <constraint firstItem="rF4-H5-YKd" firstAttribute="top" secondItem="3sL-XV-Ee7" secondAttribute="bottom" constant="16" id="uUT-9N-anO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="O6b-fz-XGe">
-                        <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" title="Score: 15" id="uK4-ge-foY">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="optionA" destination="4fA-ch-8Hr" id="7KX-0j-P3l"/>
-                        <outlet property="optionB" destination="uTd-fO-vW3" id="90F-gd-75v"/>
-                        <outlet property="optionC" destination="z3T-9a-I23" id="KoM-y8-1Zw"/>
-                        <outlet property="optionD" destination="bfl-Ve-xWG" id="ZEo-Xv-fvC"/>
-                        <outlet property="optionE" destination="IaU-JN-Xnn" id="kPV-54-O5r"/>
-                        <outlet property="progressView" destination="V6Y-cb-iyD" id="4Je-Wb-beH"/>
-                        <outlet property="qestionTitleLabel" destination="KWV-FC-gOZ" id="jay-1j-K3R"/>
-                        <outlet property="questionImage" destination="UzD-fG-Exa" id="BE4-lU-j84"/>
-                        <outlet property="scoreLabel" destination="uK4-ge-foY" id="vf7-Ci-uTm"/>
-                        <outletCollection property="optionButtons" destination="4fA-ch-8Hr" collectionClass="NSMutableArray" id="XfB-OE-iKT"/>
-                        <outletCollection property="optionButtons" destination="uTd-fO-vW3" collectionClass="NSMutableArray" id="gbf-Sz-n5a"/>
-                        <outletCollection property="optionButtons" destination="bfl-Ve-xWG" collectionClass="NSMutableArray" id="sjf-N6-Cyw"/>
-                        <outletCollection property="optionButtons" destination="IaU-JN-Xnn" collectionClass="NSMutableArray" id="WRq-9O-jDq"/>
-                        <outletCollection property="optionButtons" destination="z3T-9a-I23" collectionClass="NSMutableArray" id="AeV-Ke-sPc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-kja-62-vLA" storyboardName="RulesVC" referencedIdentifier="UIViewController-kja-62-vLA" id="fl3-4x-pEv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFF-xG-Yid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.2" y="126.35467980295567"/>
+            <point key="canvasLocation" x="2130" y="129"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qEd-ar-Rbj">
+        <!--UIViewController-BYZ-38-t0r-->
+        <scene sceneID="oEw-r9-DU2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uvq-TT-GK9" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mEe-ZN-ZpS">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9iX-Gb-Ozs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hbD-Y5-MyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-BYZ-38-t0r" storyboardName="QuizzVC" referencedIdentifier="UIViewController-BYZ-38-t0r" id="KvG-1W-97Z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfQ-qL-7p9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="127"/>
+            <point key="canvasLocation" x="2663" y="129"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Image" width="400" height="201"/>
-    </resources>
 </document>
